@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+    @apply font-rubik;
+}
+.open{
+    @apply flex-col top-0 w-[100%] h-[100%] bg-darkBlue opacity-95 text-white justify-center text-center
+}
