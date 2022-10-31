@@ -15,9 +15,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
 </head>
-<body >
-  <header>
-    <nav class="px-5 lg:px-12 py-5 lg:py-10">
+<body>
+  <header class="px-5 lg:px-28 py-5 lg:py-10">
+    <nav>
       <div class="flex justify-between">
         <a href="#"><img src="../images/logo-bookmark.svg" alt="bookmark"></a>
         <div class="cursor-pointer p-2 lg:hidden z-10" id="humburger"><img src="../images/icon-hamburger.svg" alt="humburger"></div>
@@ -31,13 +31,13 @@
     </nav>
   </header>
 
-  <main class="px-5 lg:px-10">
+  <main class="px-5 lg:px-28 flex flex-col gap-20">
     <section class="flex flex-col lg:flex-row gap-6 lg:gap-10">
-      <div class="flex flex-col w-2/4 sm:order-2 gap-6 items-center justify-center py-auto text-center lg:text-start">
-        <h1 class="capitalize text-4xl lg:text-5xl">a simple bookmark manager</h1>
+      <div class="flex flex-col lg:w-2/4 sm:order-2 gap-6 items-center justify-center py-auto text-center lg:text-start">
+        <h1 class="capitalize text-4xl font-semibold opacity-90 ">a simple bookmark manager</h1>
         <p class="text-grayishBlue">A clean and simple interface to organize your favourite websites. Open a new 
           browser tab and see your sites load instantly. Try it for free.</p>
-        <div>
+        <div class="flex gap-6 lg:ml-[-80px] ml-[0px]">
           <button class="px-5 py-2 rounded-md bg-softBlue text-white border-2 border-softBlue hover:text-softBlue hover:bg-white">Get it on Chrome</button>
           <button class="px-5 py-2 rounded-md bg-grayishBlue hover:text-grayishBlue hover:border-grayishBlue hover:bg-white hover:border-2">Get it on Firefox</button>
         </div>
@@ -46,34 +46,51 @@
         <img src="../images/illustration-hero.svg" alt="computer">
       </div>
     </section>
+
+    <section>
+      <div class="text-center pb-10 w-2/4 m-auto">
+        <h2 class="capitalize lg:mb-6 mb-3 font-semibold opacity-90 text-3xl">features</h2>
+        <p class="text-grayishBlue">Our aim is to make it quick and easy for you to access your favourite websites. 
+          Your bookmarks sync between your devices so you can access them on the go.</p>
+      </div>
+
+      <div class="capitalize pb-3 flex justify-evenly text-center">
+        <div class="underlined active">
+          <h3>simple bookmarking</h3>
+        </div>
+        <div class="underlined">
+          <h3>speedy searching</h3>
+        </div>
+        <div class="underlined">
+          <h3>easy sharing</h3>
+        </div>
+      </div>
+
+      <div class="flex gap-10">
+        <div>
+          <img src="../images/illustration-features-tab-1.svg" alt="bookmark">
+        </div>
+        <div class="flex flex-1 gap-5 flex-col justify-center items-center">
+          <h3 class="text-4xl font-semibold opacity-90">Bookmark in one click</h3>
+          <p class="text-grayishBlue">Organize your bookmarks however you like. Our simple drag-and-drop interface 
+            gives you complete control over how you manage your favourite sites.</p>
+            <button class="capitalize px-6 py-4 text-white bg-softBlue rounded-md ">more info</button>
+          </div>
+      </div>
+    </section>
   </main>
 
-
-
-  
-  
-  
-  
-
- 
-
   
 
   
 
-  Features
+  
+  
+  
 
-  Our aim is to make it quick and easy for you to access your favourite websites. 
-  Your bookmarks sync between your devices so you can access them on the go.
+  
 
-  Simple Bookmarking
-  Speedy Searching
-  Easy Sharing
-
-  Bookmark in one click
-
-  Organize your bookmarks however you like. Our simple drag-and-drop interface 
-  gives you complete control over how you manage your favourite sites.
+  
 
   More Info
 
