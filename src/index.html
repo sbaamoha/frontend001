@@ -10,8 +10,9 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" href="css/output.css">
-
+  <link rel="stylesheet" href="css/styles.css"">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
 </head>
@@ -47,7 +48,10 @@
       </div>
     </section>
 
-    <section>
+    <section id="features" class="relative">
+      <input type="radio" name="tabs" value="bookmarking" id="bookmarking" checked>
+      <input type="radio" name="tabs" value="searching" id="searching">
+      <input type="radio" name="tabs" value="sharing" id="sharing">
       <div class="text-center pb-10 w-2/4 m-auto">
         <h2 class="capitalize lg:mb-6 mb-3 font-semibold opacity-90 text-3xl">features</h2>
         <p class="text-grayishBlue">Our aim is to make it quick and easy for you to access your favourite websites. 
@@ -55,90 +59,98 @@
       </div>
 
       <div class="capitalize pb-3 flex flex-col gap-6 lg:flex-row justify-evenly text-center">
-        <div class="underlined active title1">
-          <h3>simple bookmarking</h3>
+        <div class="book line">
+          <label for="bookmarking">
+            <h3>
+              simple bookmarking
+            </h3>
+          </label>
         </div>
-        <div class="underlined title2">
-          <h3>speedy searching</h3>
+        <div class="search line">
+          <label for="searching">
+            <h3>
+            speedy searching
+            </h3>
+          </label>
         </div>
-        <div class="underlined title3">
-          <h3>easy sharing</h3>
+        <div class="share line">
+          <label for="sharing">
+           <h3>
+              easy sharing
+            </h3>
+          </label>
         </div>
       </div>
 
-      <div class="one flex flex-col lg:flex-row items-center gap-10 pt-10">
-        <div>
-          <img src="../images/illustration-features-tab-1.svg" alt="bookmark">
-        </div>
-        <div class="flex flex-1 gap-5 flex-col justify-center lg:items-start items-center">
-          <h3 class="text-4xl font-semibold opacity-90">Bookmark in one click</h3>
-          <p class="text-grayishBlue">Organize your bookmarks however you like. Our simple drag-and-drop interface 
-            gives you complete control over how you manage your favourite sites.</p>
-          <button class="capitalize hover:opacity-80 px-6 py-4 text-white bg-softBlue rounded-md ">more info</button>
+      <div class="flex">
+        <div class="bookmarking flex absolute left-0 flex-col lg:flex-row items-center gap-10 pt-10">
+          <div>
+            <img src="../images/illustration-features-tab-1.svg" alt="bookmark">
           </div>
-      </div>
-
-
-      <div class="two hidden flex-col lg:flex-row items-center gap-10 pt-10">
-        <div>
-          <img src="../images/illustration-features-tab-1.svg" alt="bookmark">
+          <div class="flex flex-1 gap-5 flex-col justify-center lg:items-start items-center">
+            <h3 class="text-4xl font-semibold opacity-90">Bookmark in one click</h3>
+            <p class="text-grayishBlue">Organize your bookmarks however you like. Our simple drag-and-drop interface 
+              gives you complete control over how you manage your favourite sites.</p>
+            <button class="capitalize hover:opacity-80 px-6 py-4 text-white bg-softBlue rounded-md ">more info</button>
+            </div>
         </div>
-        <div class="flex flex-1 gap-5 flex-col justify-center lg:items-start items-center">
-          <h3 class="text-4xl font-semibold opacity-90">Intelligent search</h3>
-          <p class="text-grayishBlue">Our powerful search feature will help you find saved sites in no time at all. 
-            No need to trawl through all of your bookmarks.</p>
-          <button class="capitalize hover:opacity-80 px-6 py-4 text-white bg-softBlue rounded-md ">more info</button>
+  
+  
+        <div class="searching flex absolute left-[-100%]  flex-col lg:flex-row items-center gap-10 pt-10">
+          <div>
+            <img src="../images/illustration-features-tab-2.svg" alt="bookmark">
           </div>
-      </div>
-
-
-      <div class="three hidden flex-col lg:flex-row items-center gap-10 pt-10">
-        <div>
-          <img src="../images/illustration-features-tab-1.svg" alt="bookmark">
+          <div class="flex flex-1 gap-5 flex-col justify-center lg:items-start items-center">
+            <h3 class="text-4xl font-semibold opacity-90">Intelligent search</h3>
+            <p class="text-grayishBlue">Our powerful search feature will help you find saved sites in no time at all. 
+              No need to trawl through all of your bookmarks.</p>
+            <button class="capitalize hover:opacity-80 px-6 py-4 text-white bg-softBlue rounded-md ">more info</button>
+            </div>
         </div>
-        <div class="flex flex-1 gap-5 flex-col justify-center lg:items-start items-center">
-          <h3 class="text-4xl font-semibold opacity-90">Share your bookmarks</h3>
-          <p class="text-grayishBlue">Easily share your bookmarks and collections with others. Create a shareable 
-            link that you can send at the click of a button.</p>
-          <button class="capitalize hover:opacity-80 px-6 py-4 text-white bg-softBlue rounded-md ">more info</button>
+  
+  
+        <div class="sharing flex absolute left-[-200%] flex-col lg:flex-row items-center gap-10 pt-10">
+          <div>
+            <img src="../images/illustration-features-tab-3.svg" alt="bookmark">
           </div>
+          <div class="flex flex-1 gap-5 flex-col justify-center lg:items-start items-center">
+            <h3 class="text-4xl font-semibold opacity-90">Share your bookmarks</h3>
+            <p class="text-grayishBlue">Easily share your bookmarks and collections with others. Create a shareable 
+              link that you can send at the click of a button.</p>
+            <button class="capitalize hover:opacity-80 px-6 py-4 text-white bg-softBlue rounded-md ">more info</button>
+            </div>
+        </div>
       </div>
 
 
     </section>
+
+    <section class="text-center">
+      <h2 class="capitalize lg:mb-6 mb-3 font-semibold opacity-90 text-3xl">Download the extension</h2>
+      <p class="text-grayishBlue">We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+        got a favourite you’d like us to prioritize.</p>
+
+      <div class="flex flex-col lg:flex-row">
+        <div class="flex items-center flex-col p-16 shadow-lg bg-grayishBlue rounded-md text-center card">
+          <div class="">
+            <div><img class="w-full" src="../images/logo-chrome.svg" alt="chrome"></div>
+            <h3 class=" cursor-pointer capitalize font-semibold text-2xl opacity-90">add to chrome</h3>
+            <p class="text-grayishBlue">Minimum version 62</p>
+            <button class="cursor-pointer text-white bg-softBlue px-6 py-2 rounded-md">Add & Install Extension</button>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
+
+<!--
   
 
   
 
   
   
-  
-
-  
-
-  
-
-
-  
-
-  
-
-
-  
-
-  
-
-
-  Download the extension
-
-  We’ve got more browsers in the pipeline. Please do let us know if you’ve 
-  got a favourite you’d like us to prioritize.
-
-  Add to Chrome
-  Minimum version 62
-  Add & Install Extension
 
   Add to Firefox
   Minimum version 55
@@ -151,36 +163,36 @@
   Frequently Asked Questions
   
   Here are some of our FAQs. If you have any other questions you’d like 
-  answered please feel free to email us.
+  answered please feel free to email us.-->
 
-  <!-- Question 1 -->
-  What is Bookmark?
+  <!-- Question 1 
+  What is Bookmark?-->
 
-  <!-- Answer 1 -->
+  <!-- Answer 1
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
   justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
-
-  <!-- Question 2 -->
+ -->
+  <!-- Question 2 
   How can I request a new browser?
-
-  <!-- Answer 2 -->
-  Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
-  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
-  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
-  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
-
-  <!-- Question 3 -->
+-->
+<!-- Answer 2 
+Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+-->
+  <!-- Question 3 
   Is there a mobile app?
-
-  <!-- Answer 3 -->
+-->
+  <!-- Answer 3 
   Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
   urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
   sollicitudin ex et ultricies bibendum.
-
-  <!-- Question 4 -->
+-->
+  <!-- Question 4 
   What about other Chromium browsers?
-
-  <!-- Answer 4 -->
+-->
+  <!-- Answer 4 
   Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
   vitae neque eget nisl gravida pellentesque non ut velit.
 
@@ -201,7 +213,7 @@
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p>
-  </footer>
+  </footer>-->
   <script src="js/index.js"></script>
 </body>
 </html>

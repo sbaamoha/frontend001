@@ -3,13 +3,8 @@
 @tailwind utilities;
 html {
     @apply font-rubik;
+    scroll-behavior: smooth;
 }
 .open{
     @apply flex-col top-0 w-[100%] h-[100%] bg-darkBlue opacity-95 text-white justify-center text-center
-}
-.underlined{
-    @apply cursor-pointer focus:border-softRed border-b-2 border-grayishBlue pb-3 hover:border-softRed
-}
-.active{
-    @apply border-softRed
 }
