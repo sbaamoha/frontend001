@@ -55,4 +55,12 @@ input[id=sharing]:not(:checked) ~ .flex .sharing {
 
 .icon {
   max-width: 100%;
+}
+
+.card {
+  padding: 2em;
+}
+
+input[id=q-one]:checked ~ .q-one.desc {
+  display: block;
 }/*# sourceMappingURL=styles.css.map */
