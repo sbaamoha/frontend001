@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 input {
   display: none;
 }
@@ -59,8 +63,4 @@ input[id=sharing]:not(:checked) ~ .flex .sharing {
 
 .card {
   padding: 2em;
-}
-
-input[id=q-one]:checked ~ .q-one.desc {
-  display: block;
 }/*# sourceMappingURL=styles.css.map */
